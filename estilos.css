@@ -1,1 +1,21 @@
-p{color:yellowgreen;}
+p{
+    color:black;
+}
+
+h1,h2,h3{
+    Color:black;
+}
+
+h4,h5,h6{
+    color:black;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+body{
+    background-image: url("midias/blue-marble-background-j3qhc5retfkz6jhp.jpg");
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+    background-attachment: fixed;
+
+    
+}
