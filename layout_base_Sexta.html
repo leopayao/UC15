@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout base</title>
+
+    <style> 
+/* seletor universal */
+*{
+    box-sizing: border-box;
+}
+
+body{ 
+    margin: 0;
+    background-color: grey;
+}
+div{
+    display: flex;
+    flex-wrap: wrap;
+}
+     header{
+        margin: 0;
+        background-color: rgb(0, 3, 206);
+        display: flex;
+
+    
+    }   
+    header p{
+        background-color: blanchedalmond;
+        margin: 0;
+        margin: auto;
+    }
+
+header h1{
+    background-color:blanchedalmond;
+    margin: 0;
+    text-align: center;
+    margin: auto;
+}
+
+header img{
+    height: 250px;
+}
+
+div{
+    background-color:#f2ffc4 ;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+li{
+    flex-grow: 1;
+}
+
+a{
+    padding: 10px;
+   background-color: #437d9e;
+    color: aliceblue;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover {
+    color: purple;
+}
+
+a:active{
+ color: red;
+}
+main{
+    padding: 10px;
+    width: 100%;
+}
+main img{ 
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    display: block;
+}
+aside{
+    padding: 10px;
+    width: 30%;
+}
+aside img{
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    display: block;
+}
+footer{
+    color: white;
+    background-color: grey;
+    text-align: center;
+    padding: 100px;
+}
+.componete{
+    color: orangered;
+}
+p#importante{
+    color: rgb(0, 26, 255);
+}
+/* midia queries (consulta de midia) */
+@media (min-width:576px) {
+    main{
+        width: 70%;
+    }
+    aside{
+        width: 30%;
+    }
+}
+ </style> 
+
+</head>
+<body>
+    <header> 
+      <img src="Midias/migey mousse.jpg" alt="mickey mouse"> 
+        
+      <h1> Layout Base </h1>
+        
+    </header>
+    <nav>
+         <!-- ul>li*5>a>{link $} -->
+         <ul>
+        
+            <li><a target="_blank" href="https://br.pinterest.com/pin/42150946508514490/">Link 1</a></li>
+            <li><a target="_blank" href="https://br.pinterest.com/pin/238761217740377714/">Link 2</a></li>
+            <li><a target="_blank" href="https://br.pinterest.com/pin/33847434695803145/">Link 3</a></li>
+            <li><a target="_blank" href="https://br.pinterest.com/pin/3307399721060485/">Link 4</a></li>
+            <li><a target="_blank" href="https://br.pinterest.com/pin/288160076149868788/">Link 5</a></li>
+         </ul>   
+        
+        
+    </nav>
+   <div>
+    <main>
+        <h1>
+            conteudo primario
+        </h1>
+        <img src="Midias/BOOOM!!.jpg" alt="caveira segundo arma enquanto tem uma explosão atras dela">
+        <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minus numquam iste dolorum neque porro architecto, nisi, qui, sed quis ratione eos autem! Laborum itaque est non quo nisi reprehenderit praesentium reiciendis architecto adipisci nam? Fuga quam sunt dolorum ad laboriosam architecto nisi harum esse a maiores ex molestiae aliquid nostrum, dolor dolores debitis voluptatem enim excepturi aperiam facilis tenetur voluptate inventore minus libero. Nemo totam optio et. Obcaecati hic aut totam repellendus exercitationem officia maxime ipsa commodi quo, quaerat dignissimos a perferendis provident laudantium, quam dolore iure mollitia atque? Quasi sequi error accusantium molestiae nemo nam corrupti corporis reprehenderit, inventore quis delectus voluptatem atque expedita beatae distinctio laboriosam omnis nobis eaque unde molestias nostrum harum at assumenda. Eaque sed vel repellendus recusandae repudiandae perspiciatis, libero officiis alias dolorem iusto explicabo delectus, voluptatibus modi atque, ipsam quidem molestias deleniti! Adipisci error, quod quisquam nostrum eius dolorem. Natus obcaecati odit rem alias ea! Soluta quia quas harum? Aliquid quo minus, officia dolor minima laborum suscipit placeat soluta culpa esse necessitatibus porro atque excepturi ipsam quas repudiandae dolore sunt illo nobis praesentium libero. Saepe odio nam repudiandae officiis dolorem debitis ad quam neque culpa minus suscipit pariatur voluptatem, deserunt, provident facilis voluptatum unde quibusdam inventore et itaque sunt soluta? Voluptatum nostrum nulla eligendi, saepe enim iure! Aliquid, nisi sunt? Deleniti quis beatae in reiciendis qui velit et, aspernatur eveniet optio debitis eum corporis ipsa, perferendis corrupti. Nobis, possimus neque eaque, aspernatur harum quia cum ducimus quas doloremque atque animi, rem quasi ut.
+        </p>
+        <img src="Midias/Irei de dorme.jpg" alt="gato com a legenda irei de dormes">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum molestiae hic quae, illum nobis doloremque harum possimus esse, laudantium quisquam, temporibus asperiores necessitatibus sed! Voluptatem praesentium laboriosam sint quasi hic excepturi sed odit aliquid? Molestiae a maxime accusantium error commodi accusamus autem non, eos sequi omnis nihil illum repudiandae voluptatem ipsum quos beatae officia quia. Illo reiciendis ad amet rerum dolor omnis totam facere voluptate magnam. Facere nostrum ad perspiciatis incidunt similique aspernatur omnis, natus vitae tempore provident recusandae laudantium excepturi ea numquam aperiam minima beatae obcaecati est, rerum consequuntur? Consequuntur dolores porro aperiam, temporibus officiis nihil molestias quaerat voluptatem odit accusantium nesciunt voluptates at tempore dolor molestiae omnis consectetur dicta? Repellendus reprehenderit repudiandae, cupiditate quis itaque, maiores fugit excepturi, ipsa eligendi illum et modi animi quas officiis adipisci voluptates quisquam neque! Neque delectus repellat alias non possimus sed autem dolor, porro labore et? Nam quod fugit quia quisquam ipsa sint molestiae quis autem labore exercitationem aspernatur reiciendis hic vel eveniet, ea quasi commodi voluptates maxime, natus praesentium corporis non alias? Dignissimos vero ullam consequuntur illo, veniam quaerat, et dolore praesentium obcaecati ratione blanditiis ipsam officiis, excepturi aspernatur perferendis. Delectus autem necessitatibus eos deleniti repudiandae consequuntur porro, nulla mollitia molestiae?
+
+        </p>
+    </main>
+        <aside>
+            <h1>
+            conteudo secundario
+            </h1>
+            <img src="Midias/baixados (1).jpg" alt="lula molusco arabe">
+                <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic ex magnam officia, laudantium aperiam assumenda eum a saepe. Minus odit nemo corrupti suscipit unde! Iste minus nam consequuntur doloribus nihil dolore, in placeat nesciunt impedit quidem facere sed beatae voluptatibus totam voluptas, porro, quas tempora ad. Atque reprehenderit laudantium odio voluptatem?
+                </p>
+                <p class="componete">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore porro recusandae, omnis voluptate est dicta labore vel perspiciatis, nostrum temporibus impedit facere veniam vero totam vitae perferendis atque corrupti molestias ex illum laborum exercitationem esse? Illo vero quaerat reprehenderit, repellat ipsam quis exercitationem commodi laborum officia provident, sequi eos.
+                    
+                </p >
+                <p id="importante">
+                   Atque ex non maxime molestias optio sapiente obcaecati, eos, aspernatur a, laborum doloribus? Neque a magnam ipsum, impedit incidunt, illo dolor accusamus maxime eius nulla minima quidem hic nisi reiciendis culpa quae magni doloremque, iure enim facilis obcaecati eos odio ea? Sapiente veniam vero cum, rerum molestias aperiam totam ipsa!
+                    Quo deleniti fuga esse cum aspernatur eos ab illo voluptatem, ad possimus excepturi sunt amet veritatis non vero ratione. Maxime molestias consequuntur nisi incidunt quos alias cum ratione, id, veniam provident quidem enim numquam! Deserunt beatae natus quaerat odio? Voluptas quia quas autem repellat natus tempore nam eveniet exercitationem ab! 
+                </p>
+        </aside>
+</div>
+<footer>
+<p>
+    TI57 - Técnico em Informatica - Todos os direitos reservados
+</p>
+</footer>
+</body>
+</html>
