@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HELP - Buscar Vagas</title>
+  <title>HELP - Página Inicial</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -164,21 +164,74 @@ height: 100px;
     .form-select {
             font-family: Arial, sans-serif;
         }
-    
-  </style>
+
+        .topo {
+            height: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .Logo {
+            width: 130px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
   <header>
 
-<img src="PI/Midias/Captura de tela 2026-03-11 085019.png"  alt="HELP Logo" class="logo">  
+<a href="Pagina_Inicial.html"> <img src="PI/Midias/Captura de tela 2026-03-11 085019.png"  alt="HELP Logo" class="Logo"></a>  
    
-    <div class="menu">&#9776;</div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+
+    <!-- BOTÃO MENU MOBILE -->
+    <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- MENU -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="Termos_de_Uso.html">Termos de Uso</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Busca_mobile.html">Buscar Serviços</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Prestar_Servico.html">Prestar Serviços</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Quem_Somos.html">Quem Somos</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Pagina_Inicial.html">Página Inicial</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
   </header>
 
-  <div class="container">
+    <div class="container">
     <div class="tabs">
-      <div class="tab active">Buscar vagas</div>
-      <div class="tab">Prestar Serviços</div>
+     <a href="Busca_mobile.html"> <div class="tab active">Buscar vagas</div> </a>
+      <a href="Prestar_Servico.html"> <div class="tab">Prestar Serviços</div> </a>
     </div>
 
     <body>
@@ -212,40 +265,82 @@ height: 100px;
 <option value="4">Manutenção</option>
 <option value="5">Construção</option>
 <option value="6">Limpeza</option>
+<option value="7">Podologia</option>
 </select>
 
     <button class="btn">Buscar</button>
 
-    <div class="section">
+     <div class="section">
       <h2>Categorias Populares</h2>
       <div class="categories">
-        <div class="category">Geral</div>
-        <div class="category">Limpeza</div>
-        <div class="category">Manutenção</div>
-        <div class="category">Construção</div>
-        <div class="category">Administração</div>
-        <div class="category">Tecnologia</div>
+       <div class="category"> <a href="Geral.html"class="text-decoration-none link-dark">Geral</a></div>
+        <div class="category"><a href="Limpeza.html" class="text-decoration-none link-dark">Limpeza</a></div>
+        <div class="category"><a href="Manutencao.html" class="text-decoration-none link-dark">Manutenção</a></div>
+        <div class="category"><a href="Construcao.html" class="text-decoration-none link-dark">Construção</a></div>
+        <div class="category"><a href="Administracao.html" class="text-decoration-none link-dark">Administração</a></div>
+        <div class="category"><a href="Tecnologia.html" class="text-decoration-none link-dark">Tecnologia</a></div>
+        <div class="category"><a href="Podologia.html" class="text-decoration-none link-dark">Podologia</a></div>
       </div>
     </div>
 
     <div class="jobs">
+
+    <img src="PI/Midias/imagem.png"  alt="HELP Logo" href="#">
+
+
+
       <h2>Vagas Recentes</h2>
       <div class="job-card">
         <h3>Nilton Marques</h3>
         <p>Categoria: Tecnologia</p>
+        <p>R$80,00 / hora</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsam corporis minus laboriosam neque eveniet nihil, aperiam nemo maiores officia dolores rerum nam et suscipit id debitis accusamus nisi fugiat.</p>
         <a href="#" class="btn-secondary">Solicite Orçamento</a>
       </div>
       <div class="job-card">
         <h3>Oscar Pinheiro</h3>
         <p>Categoria: Geral</p>
+        <p>R$50,00 / hora</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsam corporis minus laboriosam neque eveniet nihil, aperiam nemo maiores officia dolores rerum nam et suscipit id debitis accusamus nisi fugiat.</p>
         <a href="#" class="btn-secondary">Solicite Orçamento</a>
       </div>
-    </div>
+       <div class="job-card">
+        <h3>Marcos Lima</h3>
+        <p>Categoria: Construção</p>
+        <p>R$50,00 / hora</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsam corporis minus laboriosam neque eveniet nihil, aperiam nemo maiores officia dolores rerum nam et suscipit id debitis accusamus nisi fugiat.</p>
+        <a href="#" class="btn-secondary">Solicite Orçamento</a>
+      </div>
+       <div class="job-card">
+        <h3>Rita Pinheiro</h3>
+        <p>Categoria: Administração</p>
+        <p>R$60,00 / hora</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsam corporis minus laboriosam neque eveniet nihil, aperiam nemo maiores officia dolores rerum nam et suscipit id debitis accusamus nisi fugiat.</p>
+        <a href="#" class="btn-secondary">Solicite Orçamento</a>
+      </div>
+       <div class="job-card">
+        <h3>Adriana Santos</h3>
+        <p>Categoria: Tecnologia</p>
+        <p>R$80,00 / hora</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsam corporis minus laboriosam neque eveniet nihil, aperiam nemo maiores officia dolores rerum nam et suscipit id debitis accusamus nisi fugiat.</p>
+        <a href="#" class="btn-secondary">Solicite Orçamento</a>
+      </div>
+       <div class="job-card">
+        <h3>Carlos Oliveira</h3>
+        <p>Categoria: Manutenção</p>
+        <p>R$70,00 / hora</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsam corporis minus laboriosam neque eveniet nihil, aperiam nemo maiores officia dolores rerum nam et suscipit id debitis accusamus nisi fugiat.</p>
+        <a href="#" class="btn-secondary">Solicite Orçamento</a>
+      </div>
+       <div class="job-card">
+        <h3>Antonio Palheiro</h3>
+        <p>Categoria: Limpeza</p>
+        <p>R$40,00 / hora</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsam corporis minus laboriosam neque eveniet nihil, aperiam nemo maiores officia dolores rerum nam et suscipit id debitis accusamus nisi fugiat.</p>
+        <a href="#" class="btn-secondary">Solicite Orçamento</a>    
+        </div>
   </div>
   <footer class="p-4 row align-items-center">
-   
     <p class="m-2 text-center col-sm-8">
         Help Services - Serviços Tercerizados - Todos os direitos reservados
     </p>

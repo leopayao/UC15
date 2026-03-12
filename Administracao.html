@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HELP - Vagas de Administração</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+height: 100px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    header img.logo {
+      height: 30px;
+    }
+
+    header .menu {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .tabs {
+      display: flex;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .tab.active {
+      border-bottom: 3px solid #c9a227;
+      color: #000;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+
+    select, input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #d49b3e;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #a97e3a;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .section h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      text-align: center;
+    }
+
+    .category {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .jobs {
+      margin-top: 30px;
+    }
+
+    .job-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+
+    .job-card h3 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .job-card p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .job-card .btn-secondary {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #a97e3a;
+      padding: 8px 15px;
+      border-radius: 5px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .job-card .btn-secondary:hover {
+      background-color: #a97e3a;
+    }
+
+
+    footer {
+            background-color: #212b40;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+    .form-select {
+            font-family: Arial, sans-serif;
+        }
+
+        .topo {
+            height: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .Logo {
+            width: 130px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+  <header>
+
+<a href="Pagina_Inicial.html"> <img src="PI/Midias/Captura de tela 2026-03-11 085019.png"  alt="HELP Logo" class="Logo"></a>  
+   
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+
+    <!-- BOTÃO MENU MOBILE -->
+    <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- MENU -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Página Inicial</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Busca_mobile.html">Buscar Serviços</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Prestar Serviços</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Quem Somos</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Política de uso</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+  </header>
+
+  <div class="container">
+    <div class="tabs">
+     <a href="Busca_mobile.html"> <div class="tab active">Buscar vagas</div> </a>
+      <a href="Prestar_Servico.html"> <div class="tab">Prestar Serviços</div> </a>
+    </div>
+
+    <body>
+    <div class="form-group">
+    <input type="text" placeholder="Buscar">
+    </div>
+    
+    <select class="form-select form-select-sm mb-3">
+<option selected>Localidade</option>
+<option value="1">São Paulo</option>
+<option value="2">Rio de Janeiro</option>
+<option value="3">Brasília</option>
+<option value="4">Salvador</option>
+<option value="5">Fortaleza</option>
+<option value="6">Belo Horizonte</option>
+<option value="7">Manaus</option>
+<option value="8">Curitiba</option>
+<option value="9">Recife</option>
+<option value="10">Porto Alegre</option>
+<option value="11">Goiânia</option>
+<option value="12">Belém</option>
+<option value="13">Guarulhos</option>
+<option value="14">Campinas</option>
+</select>
+
+<select class="form-select form-select-sm mb-3" style="font-family: Arial, sans-serif;">
+<option selected>Área de trabalho</option>
+<option value="1">Tecnologia</option>
+<option value="2">Geral</option>
+<option value="3">Administração</option>
+<option value="4">Manutenção</option>
+<option value="5">Construção</option>
+<option value="6">Limpeza</option>
+<option value="7">Podologia</option>
+<option value="8">Educação</option>
+<option value="9">Eletricista</option>
+<option value="10">Encanador</option>
+<option value="11">Jardinagem</option>
+</select>
+
+    <button class="btn">Buscar</button>
+
+    <div class="section">
+      <h2>Categorias Populares</h2>
+      <div class="categories">
+       <div class="category"> <a href="Geral.html"class="text-decoration-none link-dark">Geral</a></div>
+        <div class="category"><a href="Limpeza.html" class="text-decoration-none link-dark">Limpeza</a></div>
+        <div class="category"><a href="Manutencao.html" class="text-decoration-none link-dark">Manutenção</a></div>
+        <div class="category"><a href="Construcao.html" class="text-decoration-none link-dark">Construção</a></div>
+        <div class="category"><a href="Administracao.html" class="text-decoration-none link-dark">Administração</a></div>
+        <div class="category"><a href="Tecnologia.html" class="text-decoration-none link-dark">Tecnologia</a></div>
+        <div class="category"><a href="Podologia.html" class="text-decoration-none link-dark">Podologia</a></div>
+      </div>
+    </div>
+
+    <div class="jobs">
+
+    <!-- <img src="PI/Midias/imagem.png"  alt="HELP Logo" href="#"> -->
+
+
+
+      <h3>Vagas Administração</h3>
+      <div class="job-card">
+        <h3>Nilton Marques</h3>
+        <p>Categoria: Administração</p>
+        <p>R$80,00 / hora</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsam corporis minus laboriosam neque eveniet nihil, aperiam nemo maiores officia dolores rerum nam et suscipit id debitis accusamus nisi fugiat.</p>
+        <a href="#" class="btn-secondary">Solicite Orçamento</a>
+      </div>
+      <div class="job-card">
+        <h3>Oscar Pinheiro</h3>
+        <p>Categoria: Administração</p>
+        <p>R$50,00 / hora</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsam corporis minus laboriosam neque eveniet nihil, aperiam nemo maiores officia dolores rerum nam et suscipit id debitis accusamus nisi fugiat.</p>
+        <a href="#" class="btn-secondary">Solicite Orçamento</a>
+      </div>
+       <div class="job-card">
+        <h3>Marcos Lima</h3>
+        <p>Categoria: Administração</p>
+        <p>R$50,00 / hora</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsam corporis minus laboriosam neque eveniet nihil, aperiam nemo maiores officia dolores rerum nam et suscipit id debitis accusamus nisi fugiat.</p>
+        <a href="#" class="btn-secondary">Solicite Orçamento</a>
+      </div>
+       <div class="job-card">
+        <h3>Rita Pinheiro</h3>
+        <p>Categoria: Administração</p>
+        <p>R$60,00 / hora</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsam corporis minus laboriosam neque eveniet nihil, aperiam nemo maiores officia dolores rerum nam et suscipit id debitis accusamus nisi fugiat.</p>
+        <a href="#" class="btn-secondary">Solicite Orçamento</a>
+      </div>
+       <div class="job-card">
+        <h3>Adriana Santos</h3>
+        <p>Categoria: Administração</p>
+        <p>R$80,00 / hora</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsam corporis minus laboriosam neque eveniet nihil, aperiam nemo maiores officia dolores rerum nam et suscipit id debitis accusamus nisi fugiat.</p>
+        <a href="#" class="btn-secondary">Solicite Orçamento</a>
+      </div>
+       <div class="job-card">
+        <h3>Carlos Oliveira</h3>
+        <p>Categoria: Administração</p>
+        <p>R$70,00 / hora</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsam corporis minus laboriosam neque eveniet nihil, aperiam nemo maiores officia dolores rerum nam et suscipit id debitis accusamus nisi fugiat.</p>
+        <a href="#" class="btn-secondary">Solicite Orçamento</a>
+      </div>
+       <div class="job-card">
+        <h3>Antonio Palheiro</h3>
+        <p>Categoria: Administração</p>
+        <p>R$40,00 / hora</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsam corporis minus laboriosam neque eveniet nihil, aperiam nemo maiores officia dolores rerum nam et suscipit id debitis accusamus nisi fugiat.</p>
+        <a href="#" class="btn-secondary">Solicite Orçamento</a>    
+        </div>
+  </div>
+  <footer class="p-4 row align-items-center">
+    <p class="m-2 text-center col-sm-8">
+        Help Services - Serviços Tercerizados - Todos os direitos reservados
+    </p>
+    <nav class="col-sm-2">
+        <a href="#"class="link-ligth"><i style="color: #fff;" class="bi bi-whatsapp"></i></a>
+        <a href="#"class="link-ligth"><i style="color: #fff;"  class="bi bi-meta"></i></a>
+        <a href="#"class="link-ligth"><i style="color: #fff;"  class="bi bi-telephone"></i></a>
+        <a href="#"class="link-ligth"><i style="color: #fff;"  class="bi bi-instagram"></i></a>
+     </nav>
+</footer>
+</body>
+</html>
