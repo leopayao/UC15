@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout base</title>
+    <Style>
+        body{
+            margin: 0;
+        }
+        header{
+            background-color: blue;
+            /*padding: 40px;*/
+            display: flex;
+        }  
+         /*   margin-top:40px;
+            margin-right: 100px;
+            margin-bottom: 150px;
+            margin-left: 200px;
+            */
+
+           /* margin: 40px 100px 150px 200px;*/
+
+            
+                /* padding: 40px; */
+            
+
+            ul{
+                display: Flex;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                /* justify-content: space-around; */
+            }
+
+            li{
+                flex-grow: 1;
+            }
+
+            a{
+                padding: 10px;
+                color: red;
+                display: block;
+                text-align: center;
+                text-decoration: none;
+            }
+
+            a:visited{
+                color: yellow;
+                
+            }
+
+            a:active{
+                color:blue;
+
+
+            }
+
+            a:hover{
+                color:black;
+                background-color: aqua;
+
+
+            }
+            
+            img {   
+                 height: 150px;
+            }
+            
+            h1{
+            background-color: blueviolet;
+            margin: 0;
+            text-align: center;
+            margin:auto
+            }     
+        </Style>
+</head>
+<body>
+    <header>
+        <img src="Midias/Deadpool_2016.jpg" alt="Logo">
+        <h1>Layout base</h1>
+    </header>    
+
+    <nav>
+
+        <!-- <ul>
+            <li><a href="#">Link 1</a> </li>
+            <li><a href="#">Link 2</a> </li>
+            <li><a href="#">Link 3</a> </li>
+            <li><a href="#">Link 4</a> </li>
+            <li><a href="#">Link 5</a> </li>
+        </ul> -->
+
+        <!-- ul>li*5>a>{Link } Criar Lista de Link -->
+
+     <ul>
+        <li><a href="https://www.google.com/" target="_blank">Link 1</a></li>
+        <li><a href="https://www.uol.com.br" target="_blank">Link 2</a></li>
+        <li><a href="https://www.sp.senac.br/" target="_blank">Link 3</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank">Link 4</a></li>
+        <li><a href="https://br.linkedin.com/in/leonardopayao" target="_blank">Link 5</a></li>
+     </ul>
+
+    </nav>
+    
+</body>
+</html>

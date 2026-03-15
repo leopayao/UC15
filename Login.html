@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HELP - Página Inicial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+height: 100px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    header img.logo {
+      height: 30px;
+    }
+
+    header .menu {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .tabs {
+      display: flex;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .tab.active {
+      border-bottom: 3px solid #c9a227;
+      color: #000;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+
+    select, input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #d49b3e;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #a97e3a;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .section h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      text-align: center;
+    }
+
+    .category {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .jobs {
+      margin-top: 30px;
+    }
+
+    .job-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+
+    .job-card h3 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .job-card p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .job-card .btn-secondary {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #a97e3a;
+      padding: 8px 15px;
+      border-radius: 5px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .job-card .btn-secondary:hover {
+      background-color: #a97e3a;
+    }
+
+
+    footer {
+            background-color: #212b40;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+    .form-select {
+            font-family: Arial, sans-serif;
+        }
+
+        .topo {
+            height: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .Logo {
+            width: 130px;
+            height: auto;
+        }
+
+                #navbarNav {
+    max-height: 100px;   /* altura máxima da tela */
+    overflow-y: auto;   /* cria rolagem se passar */
+}
+@media (max-width: 991px) {
+    #navbarNav {
+        max-height: 140px;
+        overflow-y: auto;
+    }
+}
+    </style>
+</head>
+<body>
+  <header>
+
+<a href="Pagina_Inicial.html"> <img src="PI/Midias/Captura de tela 2026-03-11 085019.png"  alt="HELP Logo" class="Logo"></a>  
+   
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+
+    <!-- BOTÃO MENU MOBILE -->
+    <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+<!-- MENU -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav ms-auto">
+
+       <li class="nav-item">
+          <a class="nav-link" href="Pagina_Inicial.html">Página Inicial</a>
+        </li>
+              <li class="nav-item">
+          <a class="nav-link" href="Login.html">Login</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Busca_mobile.html">Buscar Serviços</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Prestar_Servico.html">Prestar Serviços</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Quem_Somos.html">Quem Somos</a>
+        </li>
+
+          <li class="nav-item">
+          <a class="nav-link" href="Termos_de_Uso.html">Termos de Uso</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</nav>
+
+  </header>
+<div class="container">
+
+<div class="login-box">
+
+<div class="card shadow">
+
+<div class="card-body">
+
+<h3 class="text-center mb-4">Login</h3>
+
+<!-- GOOGLE -->
+<button class="btn btn-danger social-btn mb-2">
+<i class="bi bi-google"></i>
+Entrar com Google
+</button>
+
+<!-- FACEBOOK -->
+<button class="btn btn-primary social-btn mb-2">
+<i class="bi bi-facebook"></i>
+Entrar com Facebook
+</button>
+
+<hr>
+
+<form id="loginForm">
+
+<div class="mb-3">
+<label class="form-label">Email</label>
+
+<input
+type="email"
+class="form-control"
+id="usuario"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">Senha</label>
+
+<input
+type="password"
+class="form-control"
+id="senha"
+required>
+
+</div>
+
+<!-- ESQUECI SENHA -->
+
+<div class="text-end mb-2">
+
+<a href="EsqueciSenha.html">
+
+Esqueci a senha
+
+</a>
+
+</div>
+
+<button class="btn btn-warning w-100">
+
+Entrar com E-mail
+
+</button>
+
+<div class="text-center mt-3 text-danger"
+id="msgErro"></div>
+
+</form>
+
+<hr>
+
+<div class="text-center">
+
+Não tem conta?
+
+<a href="Cadastro.html"
+class="fw-bold text-primary">
+
+Cadastre-se
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<script>
+
+document.getElementById("loginForm")
+.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+let user =
+document.getElementById("usuario").value;
+
+let pass =
+document.getElementById("senha").value;
+
+if(user == "teste@teste.com" && pass == "123"){
+
+window.location.href =
+"Pagina_Inicial.html";
+
+}else{
+
+document.getElementById("msgErro")
+.innerText =
+"Usuário ou senha inválidos";
+
+}
+
+});
+
+</script>
+
+</body>
+
+  <footer class="p-4 row align-items-center">
+    <p class="m-2 text-center col-sm-8">
+        Help Services - Serviços Tercerizados - Todos os direitos reservados
+    </p>
+    <nav class="col-sm-2">
+        <a href="#"class="link-ligth"><i style="color: #fff;" class="bi bi-whatsapp"></i></a>
+        <a href="#"class="link-ligth"><i style="color: #fff;"  class="bi bi-meta"></i></a>
+        <a href="#"class="link-ligth"><i style="color: #fff;"  class="bi bi-telephone"></i></a>
+        <a href="#"class="link-ligth"><i style="color: #fff;"  class="bi bi-instagram"></i></a>
+     </nav>
+</footer>
+</body>
+</html>
