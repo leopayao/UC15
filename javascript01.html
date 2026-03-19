@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex de java script</title>
+</head>
+<body>
+
+    <button onclick='document.getElementById("mensagem01").innerText = "Olá, Mundo!"; mostrarMensagem()'>Clique aqui</button>
+    <p id="mensagem01"></p>
+
+    <button onclick='mostrarMensagemNãoClique()'>Não Clique aqui</button>
+
+    <h3>Via Arquivo externo</h3>
+    <button onclick='Exibirmensagem2()'>Clique aqui</button>
+    <script src="script.js"></script>
+
+    <h2>Alterando Atributos</h2>
+    <button onclick="Liga()">Liga</button>
+    <img src="Midias/off.gif" alt="Lâmpada" id="Lamp">
+    <button onclick="Desliga()">Desliga</button>
+
+    <h2>Alterar Formatação</h2>
+   <button onclick="formata()">Vermelho</button>
+
+   <h3>Tema escuro</h3>
+    <button onclick="escuro()">Tema Escuro</button>
+    <h3>Tema claro</h3>
+    <button onclick="claro()">Tema Claro</button>
+
+
+
+    <script>
+        function Liga() {
+           document.getElementById("Lamp").src = "Midias/on.gif";           
+        }
+        function Desliga() {
+           document.getElementById("Lamp").src = "Midias/off.gif";           
+        }
+
+        function formata() {
+            document.getElementById("mensagem01").style.color = "red";
+        }
+
+        function escuro() {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+        }
+
+        function claro() {
+            document.body.style.backgroundColor = "white";
+            document.body.style.color = "black";
+        }
+
+    </script>
+
+</body>
+</html>

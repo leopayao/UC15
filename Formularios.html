@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <!-- Bliblioteca de icones do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset{
+            margin-bottom: 20px;
+        }
+
+        label{
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        label [for="Aluno"],
+        label [for="Professor"],
+        label [for="Promo"],select,textarea{
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"]{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+           box-sizing: border-box;
+        }
+
+        select{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+         input[type="submit"],
+         input[type="reset"]{
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+         input[type="submit"]:hover,
+         input[type="reset"]:hover{
+            background-color: #45a049;
+        }
+    </style>
+<script>
+    function verSenha(){   
+        let senhaInput = document.getElementById("senha"); 
+        let olho = document.getElementById("olho");
+        if(senhaInput.type === "password"){
+            senhaInput.type = "text";
+            olho.classList.replace("bi-eye", "bi-eye-slash");
+        
+            
+        } else {
+            senhaInput.type = "password";
+            olho.classList.replace("bi-eye-slash", "bi-eye");
+        }
+    }
+</script>
+</head>
+<body>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+        <input type="text" name="nome" placeholder="Digite seu nome">
+        <br>
+        <input type="email" name="email" placeholder="Digite seu email">
+        <br>
+        <input type="telefone" name="telefone" placeholder="Digite seu telefone">
+        <br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Dados de Acesso</legend>
+        <input type="password" id="senha" name="password" placeholder="Digite sua senha ">
+        <br> 
+        <button type="button" onclick="verSenha()" id="olho" class="bi bi-eye"></button>
+        <input type="radio" name="tipo" id="Aluno" value="Aluno"> 
+        <label for="Aluno">Aluno</label>
+        <input type="radio" name="tipo" id="Professor" value="Professor"> 
+        <label for="Professor">Professor</label>
+        <br> 
+         <select name="Nivel" id="Nivel" required>
+            <option value="">Selecione um curso</option>
+            <option value="Iniciante">Iniciante</option>
+            <option value="Intermediario">Intermediário</option>
+            <option value="Avancado">Avançado</option>
+        </select>
+        </fieldset>
+
+        <br>
+        <input type="checkbox" name="promo" id="Promo" value="sim">
+        <label for="Promo">Desejo receber promoções</label>
+        <br>
+        <input type="reset" value="Limpar">
+        <br>
+        <input type="submit" value="Enviar">
+
+    
+    </form>
+
+    <!-- <form action="">
+        <input type="text">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome">
+    </form>   -->
+    
+</body>
+</html>

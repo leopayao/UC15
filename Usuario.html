@@ -306,6 +306,138 @@ Sair
 
 </li>
 
+ <header class="top-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <a href="Pagina_Inicial.html" class="navbar-brand">
+          <img src="PI/Midias/Captura de tela 2026-03-11 085019.png" alt="HELP Logo" class="Logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span><i class="bi bi-list fs-2" style="color:#212b40;"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="Pagina_Inicial.html">Página Inicial</a></li>
+            <li class="nav-item" id="menuLogin"><a class="nav-link" href="Login.html">Login</a></li>
+            <li class="nav-item"><a class="nav-link" href="Busca_mobile.html">Buscar Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="Prestar_Servico.html">Prestar Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="Quem_Somos.html">Quem Somos</a></li>
+            <li class="nav-item"><a class="nav-link" href="Termos_de_Uso.html">Termos de Uso</a></li>
+
+            <li class="nav-item dropdown user-dropdown d-none" id="menuUsuario">
+              <a class="nav-link dropdown-toggle" href="#" id="userMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://via.placeholder.com/34" alt="Usuário" class="user-thumb" id="userMenuFotoMini">
+                <span id="userMenuTexto">Login</span>
+              </a>
+
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li class="text-center p-2 menu-user-box">
+                  <img id="fotoMenu" src="https://via.placeholder.com/60" width="60" height="60" alt="Foto do usuário">
+                  <br><br>
+                  <span id="nomeMenu" class="fw-bold"></span>
+                </li>
+
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Usuario.html">Perfil</a></li>
+                <li><a class="dropdown-item text-danger" href="#" onclick="sair()">Sair</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="perfil-section">
+    <div class="perfil-card">
+      <aside class="perfil-sidebar">
+        <img id="foto" src="https://via.placeholder.com/150" alt="Foto do usuário">
+        <h3 id="nomeLateral">Usuário HELP</h3>
+        <p>
+          Gerencie seus dados de cadastro, visualize suas informações e mantenha seu perfil sempre atualizado dentro da plataforma HELP.
+        </p>
+      </aside>
+
+      <section class="perfil-content">
+        <h2>Meu Perfil</h2>
+
+        <div class="info-grid">
+          <div class="info-card">
+            <span>Nome</span>
+            <p id="nome">-</p>
+          </div>
+
+          <div class="info-card">
+            <span>E-mail</span>
+            <p id="email">-</p>
+          </div>
+
+          <div class="info-card">
+            <span>Telefone</span>
+            <p id="telefone">-</p>
+          </div>
+
+          <div class="info-card">
+            <span>CPF / CNPJ</span>
+            <p id="cpf">-</p>
+          </div>
+        </div>
+
+        <div class="perfil-actions">
+          <a href="Pagina_Inicial.html" class="btn-help">Voltar para a Página Inicial</a>
+          <button class="btn-sair" onclick="sair()">Sair</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-md-12 mb-3 mb-lg-0 text-center text-lg-start">
+          <p>Help Services - Serviços Terceirizados - Todos os direitos reservados</p>
+        </div>
+
+        <div class="col-lg-4 col-md-12 text-center text-lg-end footer-social">
+          <a href="#"><i class="bi bi-whatsapp"></i></a>
+          <a href="#"><i class="bi bi-meta"></i></a>
+          <a href="#"><i class="bi bi-telephone"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let usuario = JSON.parse(localStorage.getItem("usuario"));
+
+    if (!usuario) {
+      window.location.href = "Login.html";
+    } else {
+      document.getElementById("nome").innerText = usuario.nome || "-";
+      document.getElementById("email").innerText = usuario.email || "-";
+      document.getElementById("telefone").innerText = usuario.telefone || "-";
+      document.getElementById("cpf").innerText = usuario.cpf || "-";
+      document.getElementById("foto").src = usuario.foto || "https://via.placeholder.com/150";
+      document.getElementById("nomeLateral").innerText = usuario.nome || "Usuário HELP";
+
+      document.getElementById("menuLogin").classList.add("d-none");
+      document.getElementById("menuUsuario").classList.remove("d-none");
+
+      document.getElementById("userMenuTexto").innerText = usuario.nome || "Usuário";
+      document.getElementById("nomeMenu").innerText = usuario.nome || "Usuário";
+      document.getElementById("fotoMenu").src = usuario.foto || "https://via.placeholder.com/60";
+      document.getElementById("userMenuFotoMini").src = usuario.foto || "https://via.placeholder.com/34";
+    }
+
+    function sair() {
+      localStorage.removeItem("usuario");
+      window.location.href = "Login.html";
+    }
+  </script>
+
 <!-- <div class="container">
 
 <div class="box">
